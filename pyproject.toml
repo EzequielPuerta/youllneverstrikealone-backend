@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "you-ll-never-strike-alone"
+version = "0.1.0"
+description = ""
+authors = ["Ezequiel Puerta <eze19.2009@gmail.com>"]
+readme = "README.md"
+packages = [{include = "you_ll_never_strike_alone"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^5.0.1"
+djangorestframework = "^3.14.0"
+mongoengine = "^0.27.0"
+python-dotenv = "^1.0.0"
+django-rest-framework-mongoengine = "^3.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
