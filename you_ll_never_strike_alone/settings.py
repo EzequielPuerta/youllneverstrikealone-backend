@@ -31,9 +31,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG") == "True"
+DEBUG = os.environ.get("DEBUG") == "True"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [f"{os.environ.get('FLY_APP_NAME')}.fly.dev"]
 
 
 # Application definition
@@ -90,8 +90,8 @@ DATABASES = {
 }
 
 mongoengine.connect(
-    os.getenv("MONGO_DB_DATABASE"),
-    host=os.getenv("MONGO_DB_URI"),
+    os.environ.get("MONGO_DB_DATABASE"),
+    host=os.environ.get("MONGO_DB_URI"),
 )
 
 # Password validation

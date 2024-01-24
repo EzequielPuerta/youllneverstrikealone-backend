@@ -1,0 +1,13 @@
+asgiref==3.7.2
+Django==5.0.1
+django-rest-framework-mongoengine==3.4.1
+djangorestframework==3.14.0
+dnspython==2.5.0
+gunicorn==21.2.0
+mongoengine==0.27.0
+packaging==23.2
+pymongo==4.6.1
+python-dotenv==1.0.0
+pytz==2023.3.post1
+sqlparse==0.4.4
+-e git+ssh://git@github.com/EzequielPuerta/youllneverstrikealone.git@91da3f0279093d221cfdb5cb7631a1772096d65b#egg=you_ll_never_strike_alone
